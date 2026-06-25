@@ -1,16 +1,24 @@
 using System;
-class program{
-  static void main(){
-    int n , a = 0, b=1, c = 0;
-    console.write("Enter n :);
-                  n= convert.ToInt32(console.ReadLine());
-                  For(int i = 2; i< =n; i++ ){
-                    c = a + b;
-                    a = b;
-                    b = c;
-                  }
-                  console.WriteLine("Nth term = " + (n==0 ? a : b)):
-                  }
+
+class Program
+{
+    static void Main()
+    {
+        int n, a = 0, b = 1, c = 0;
+
+        Console.Write("Enter n: ");
+        n = Convert.ToInt32(Console.ReadLine());
+
+        for (int i = 2; i <= n; i++)
+        {
+            c = a + b;
+            a = b;
+            b = c;
+        }
+
+        Console.WriteLine("Nth term = " + (n == 0 ? a : b));
+    }
+}
                                     
                                     
                                     
